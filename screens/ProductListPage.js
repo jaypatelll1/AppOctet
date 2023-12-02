@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 8,
     height: 300,
-    width: windowWidth / 2 - 24, // Adjust this value as needed
+    width: windowWidth / 2 - 16, 
     borderWidth: 1,
     borderColor: colors.border,
   },
