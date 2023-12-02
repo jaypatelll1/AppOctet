@@ -10,9 +10,11 @@ import {
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import productList from "../data/productList";
+import { Dimensions } from 'react-native';
 
 const LIST_VIEW = "list";
 const GRID_VIEW = "grid";
+const windowWidth = Dimensions.get('window').width;
 
 const ProductListPage = ({ navigation }) => {
   const [viewType, setViewType] = useState(LIST_VIEW);
@@ -202,7 +204,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 8,
     height: 300,
-    width: 186,
+    width: windowWidth / 2 - 24, // Adjust this value as needed
     borderWidth: 1,
     borderColor: colors.border,
   },
